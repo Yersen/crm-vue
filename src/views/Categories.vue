@@ -2,7 +2,7 @@
     
     <div>
     <div class="page-title">
-        <h3>Категории</h3>
+        <h3>{{'Categories'|localize}}</h3>
     </div>
     <section>
         <Loader v-if="loading"/>
@@ -16,7 +16,7 @@
             @updated="updateCategories"
          />
         <div v-else class="page-subtitle">
-            <h4>Добавьте категории</h4>
+            <h4>{{'NoCategories'|localize}}</h4>
         </div>
         </div>
     </section>
